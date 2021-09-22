@@ -36,10 +36,11 @@ class InternetScouting():
         self.request_count = 0
         self.current_word = ""
         # Chinh sua tham so o day
-        self.start_index = 14335
-        self.path_data = "./data/part_data/part_new_data_1.txt"
-        self.path_missing = "./result/part_1/index_miss.txt"
-        self.path_result = "./result/part_1/translate_result_part1_"+str(self.start_index)+".txt"
+        self.start_index = 2584
+        self.part_data = 6
+        self.path_data = "./data/part_data/part_new_data_"+str(self.part_data)+".txt"
+        self.path_missing = "./result/part_"+str(self.part_data)+"/index_miss.txt"
+        self.path_result = "./result/part_"+str(self.part_data)+"/translate_result_part"+str(self.part_data)+"_"+str(self.start_index)+".txt"
         
 
     def initialize_driver(self):
